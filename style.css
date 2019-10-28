@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+/* Default page Header start */ 
+  /* Logo */ 
+  .logo img {
+    width: 10rem;
+    height: auto;
+  }
+  
+  /* Navigation */
+  .main-nav {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links {
+    color: seashell;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.8rem;
+    display: block;
+  }
+
+  .nav-links:hover {
+    font-size: 1.1rem;
+    transition: all 0.5s ease;
+  }
+  
+  /* Icon toggle */
+  .navbar-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1.8rem;
+    cursor: pointer;
+    color: seashell;
+    font-size: 1.7rem;
+  }
+  
+  .nav-active {
+    display: block;
+    background-color: black;
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media screen and (min-width: 768px) {
+
+  /* Navigation */
+  .navbar{
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 5rem;
+  }
+  
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: right;
+  }
+  
+  .nav-links{
+    color: seashell;
+    align-items: right;
+    padding: 0.4em;
+    text-decoration: underline;
+  }
+  
+  /* Icon toggle */
+  .navbar-toggle {
+      display: none;
+  }
+  
+  /* Hover on nav links */
+  .nav-links:hover {
+    background-color: rgb(49, 49, 49);
+    transition: all 0.5s ease;
+    font-size: 1.2rem;
+    border-radius: 5%;
+  }
+}
+
+
+
+.mission-container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mission {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");  
+  background-repeat: no-repeat;
+  background-position:center;
+  width: 65rem;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mission-text {
+  background-color: black;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/* Featured Tea Section */
+.ranges-container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.ranges-box {
+  width: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ranges{
+  margin: 1rem;
+}
+
+.ranges-text h2, h4{
+  margin: 0.7rem 0.7rem, 1.2rem, 0.7rem;
+}
+
+.ranges img {
+  width: 18rem;
+  height: auto;
+  display: block;
+}
+
+.ranges p{
+  margin-top: 0.5rem;
+}
+
+/* Locations */
+.locations-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.locations-box {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");;
+  background-repeat: no-repeat;
+  width: 65rem;
+  min-height: 32rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.locations-box h2 {
+margin: auto;
+padding: 1.5rem;
+color: black;
+opacity: 0.9;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .locations-box h2 {
+    margin: auto;
+    padding: 1.5rem;
+    color: seashell;
+    opacity: 1;
+}
+}
+
+.location {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.box {
+width: 18rem;
+background-color: black;
+margin: 0.5rem;
+padding: 1.5rem 0;
+}
+
+/* Contact */
+.contact {
+  height: 10rem;
+}
+
+/* Footer */
+footer {
+font-size: 0.8rem;
+}
